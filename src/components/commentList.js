@@ -14,7 +14,7 @@ class CommentList extends React.Component {
 
     renderListItem(comment) {
         return (
-            <CommentItem {...comment} key={comment.id} onDelete={this.props.deleteComent.bind(this, comment.id) }/>
+            <CommentItem {...comment} key={comment.id} onDelete={this.props.deleteComment.bind(this, comment.id) }/>
         );
     }
 
@@ -23,12 +23,12 @@ class CommentList extends React.Component {
     }
 
     commentOnchange(evt) {
-        this.setState({newComment: evt.target.value});
+        this.setState({newComment: `${evt.target.value}`});
     }
 
     subComment() {
         if (this.state.newComment) {
-            this.props.addComent(this.state.newComment);
+            this.props.addComment(this.state.newComment);
             this.setState({newComment: ''});
         }
     }

@@ -1,12 +1,12 @@
 import { ADD_COMMENT, DELETE_COMMENT} from './types';
 
-export function addComent(comment) {
+export function addComment(comment) {
     return {
         type: ADD_COMMENT,
         payload: {comment}
     };
 }
-export function deleteComent(commentID) {
+export function deleteComment(commentID) {
     return {
         type: DELETE_COMMENT,
         payload: {commentID}

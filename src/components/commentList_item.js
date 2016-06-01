@@ -14,7 +14,7 @@ const CommentItem = (props) => {
                 <div>
                     <small>{'Posted ' + timeStampHelper(props.commentDate) }</small>
                 </div>
-                {props.commentContent}
+                    {props.commentContent}
                 <div>
                     <small><a style={{'color':'red'}} href="#" onClick={props.onDelete}>Delete</a></small>
                 </div>
