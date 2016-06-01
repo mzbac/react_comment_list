@@ -27,7 +27,6 @@ class CommentList extends React.Component {
     }
 
     subComment() {
-        debugger;
         if (this.state.newComment) {
             this.props.addComent(this.state.newComment);
             this.setState({newComment: ''});
