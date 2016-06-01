@@ -16,10 +16,10 @@ module.exports = {
         }]
     },
     plugins: [
-         new webpack.optimize.UglifyJsPlugin({
-          sourceMap: false,
-          mangle: false
-         })
+         //new webpack.optimize.UglifyJsPlugin({
+         // sourceMap: false,
+         // mangle: false
+         //})
     ],
     resolve: {
         extensions: ['', '.js', '.jsx']
