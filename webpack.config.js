@@ -2,8 +2,9 @@ module.exports = {
   entry: [
     './src/index.js'
   ],
-  output: {
-    path: '../Public/Dist/js',
+ output: {
+    path: __dirname,
+    publicPath: '/',
     filename: 'bundle.js'
   },
   devtool: 'source-map',

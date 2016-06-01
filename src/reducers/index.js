@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import CommentList from './comment_list';
+import commentList from './comment_list';
 
 const rootReducer = combineReducers({
-  CommentList
+  commentList
 });
 
 export default rootReducer;
