@@ -1,4 +1,4 @@
-const initalState = {
+const initialState = {
     commentList: [
         {
             id: '1',
@@ -21,4 +21,4 @@ const initalState = {
         }]
 }
 
-export default initalState;
+export default initialState;

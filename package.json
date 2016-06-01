@@ -1,5 +1,5 @@
 {
-  "name": "demo",
+  "name": "react_comment_list",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -22,7 +22,6 @@
     "eslint-plugin-react": "^3.14.0"
   },
   "dependencies": {
-    "axios": "^0.9.1",
     "babel-preset-stage-1": "^6.1.18",
     "lodash": "^3.10.1",
     "moment": "^2.13.0",
@@ -33,7 +32,6 @@
     "redux": "^3.0.4",
     "redux-form": "^4.2.0",
     "redux-promise": "^0.5.1",
-    "redux-thunk": "^1.0.3",
-    "reselect": "^2.5.1"
-  }
+    "redux-thunk": "^1.0.3"
+   }
 }
