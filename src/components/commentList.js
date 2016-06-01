@@ -9,7 +9,7 @@ import * as actions from '../actions';
 class CommentList extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {newComent: ''}
+        this.state = {newComment: ''}
     }
 
     renderListItem(comment) {
@@ -22,14 +22,14 @@ class CommentList extends React.Component {
         return _.map(this.props.commentList, this.renderListItem.bind(this));
     }
 
-    comentOnchange(evt) {
-        this.setState({newComent: evt.target.value});
+    commentOnchange(evt) {
+        this.setState({newComment: evt.target.value});
     }
 
-    subComent() {
+    subComment() {
         if (this.state.newComent) {
             this.props.addComent(this.state.newComent);
-            this.setState({newComent: ''});
+            this.setState({newComment: ''});
         }
     }
 
@@ -41,8 +41,8 @@ class CommentList extends React.Component {
                 </div>
                 <div className="panel-body no-padding">
                     {this.renderList() }
-                    <CommentInput value={this.state.newComent} onSubmit={this.subComent.bind(this) }
-                                  onChange={this.comentOnchange.bind(this) }/>
+                    <CommentInput value={this.state.newComment} onSubmit={this.subComment.bind(this) }
+                                  onChange={this.commentOnchange.bind(this) }/>
                 </div>
             </div>
 
