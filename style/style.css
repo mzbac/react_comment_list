@@ -1,0 +1,9 @@
+.no-border-radius{
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+.no-padding{
+  padding: 0px;
+}
