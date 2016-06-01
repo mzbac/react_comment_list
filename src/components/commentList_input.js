@@ -1,7 +1,8 @@
 import React from 'react';
 
 const inputStyle={
-    'marginLeft':'-1px'
+    'marginLeft':'-1px',
+    'right':'-1px'
 }
 const iconStyle={
     'borderRight':'0px'
@@ -11,7 +12,7 @@ const CommentInput = (props) => {
         <div className="input-group">
             <input type="text" style={inputStyle} className="form-control no-border-radius" value={props.value } onChange={props.onChange}
                    placeholder="Type a comment" aria-describedby="basic-addon2"/>
-            <span className="input-group-addon no-border-radius" style={iconStyle}  onClick={props.onSubmit}><i
+            <span className="btn input-group-addon no-border-radius" style={iconStyle}  onClick={props.onSubmit}><i
                 className="fa fa-paper-plane" aria-hidden="true"></i></span>
         </div>
     );
