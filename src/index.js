@@ -8,7 +8,7 @@ import CommentList from './components/commentList';
 
 const store = createStore(reducers);
 ReactDOM.render(
-  <Provider store={store}>
-    <CommentList/>
-  </Provider>
-  , document.querySelector('.container'));
+    <Provider store={store}>
+        <CommentList/>
+    </Provider>
+    , document.querySelector('.container'));
