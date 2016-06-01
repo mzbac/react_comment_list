@@ -1,9 +1,9 @@
 import moment from 'moment';
 import { ADD_COMMENT, DELETE_COMMENT } from '../actions/types';
-import initalState from '../initalState';
+import initialState from '../initialState';
 import guid from '../helpers/guidHelper';
 
-export default function (state = initalState.commentList, action) {
+export default function (state = initialState.commentList, action) {
     switch (action.type) {
         case ADD_COMMENT:
             return [...state, {
