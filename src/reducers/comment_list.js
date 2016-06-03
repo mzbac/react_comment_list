@@ -1,4 +1,5 @@
 import moment from 'moment';
+import _ from 'lodash';
 import { ADD_COMMENT, DELETE_COMMENT } from '../actions/types';
 import initialState from '../initialState';
 import guid from '../helpers/guidHelper';
